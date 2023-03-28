@@ -7,6 +7,10 @@
   --button-footer-text: #f4f4fd;
   --button-color: #e7e9fc;
   --list-card-set: #e7e9fc;
+  --hero-gradient: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  );
 }
 
 h1,
@@ -160,6 +164,10 @@ body {
 /* SECTION HERO BUTTON STUDIO */
 .hero {
   background-color: var(--logo-studio);
+  background-image: var(--hero-gradient), url(../images/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 188px 0;
 }
 
@@ -207,6 +215,60 @@ body {
 .flex-two {
   display: flex;
   gap: 24px;
+}
+.antenna {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--button-footer-text);
+  background-image: url(../images/section_1/antenna.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 8px;
+}
+
+/* .antenna {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-image: url(../images/section_1/antenna.png),
+    url(../images/section_1/rectangle.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 8px;
+} */
+
+.clock {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-image: url(../images/section_1/clock.png),
+    url(../images/section_1/rectangle.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 8px;
+}
+
+.diagram {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-image: url(../images/section_1/diagram.png),
+    url(../images/section_1/rectangle.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 8px;
+}
+
+.astronaut {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-image: url(../images/section_1/astronaut.png),
+    url(../images/section_1/rectangle.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 8px;
 }
 
 .section-two-title {
@@ -291,6 +353,32 @@ body {
 .section-four-profession {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.saction-four-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.saction-four-social-items {
+  width: 40px;
+  height: 40px;
+}
+
+.saction-four-social-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--logo-web);
+  align-items: center;
+  justify-content: center;
+}
+
+.saction-four-social-icon {
+  fill: var(--button-footer-text);
 }
 
 /* BUTTON PORTFOLIO*/
@@ -368,6 +456,10 @@ body {
   padding: 100px 0;
 }
 
+.footer-logo-text {
+  display: flex;
+}
+
 .footer-logo-web {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -393,4 +485,18 @@ body {
   max-width: 264px;
   line-height: 1.5em;
   margin-top: 16px;
+}
+
+.footer-social {
+  display: flex;
+  width: 208px;
+  height: 80px;
+}
+.social-media {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--brand-color-btn-1);
 }
