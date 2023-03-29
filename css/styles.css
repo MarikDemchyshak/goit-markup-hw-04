@@ -216,27 +216,16 @@ body {
   display: flex;
   gap: 24px;
 }
-.antenna {
+.section-two-icon {
   width: 264px;
   height: 112px;
   border-radius: 4px;
   background-color: var(--button-footer-text);
-  background-image: url(../images/section_1/antenna.png);
-  background-repeat: no-repeat;
-  background-position: center;
   margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-/* .antenna {
-  width: 264px;
-  height: 112px;
-  border-radius: 4px;
-  background-image: url(../images/section_1/antenna.png),
-    url(../images/section_1/rectangle.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 8px;
-} */
 
 .clock {
   width: 264px;
@@ -381,6 +370,38 @@ body {
   fill: var(--button-footer-text);
 }
 
+/* SECTION FIVE */
+.section-five-customers {
+  padding-top: 123px;
+  padding-bottom: 120px;
+}
+
+.section-five-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--logo-studio);
+  margin-bottom: 72px;
+}
+
+.section-five-list {
+  display: flex;
+  gap: 24px;
+}
+
+.section-five-icon {
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* BUTTON PORTFOLIO*/
 .button-list {
   padding-top: 96px;
@@ -456,8 +477,12 @@ body {
   padding: 100px 0;
 }
 
-.footer-logo-text {
+.footer-container {
   display: flex;
+}
+
+.footer-logo-text {
+  margin-right: 120px;
 }
 
 .footer-logo-web {
@@ -488,15 +513,35 @@ body {
 }
 
 .footer-social {
-  display: flex;
   width: 208px;
   height: 80px;
 }
-.social-media {
+.footer-title-social-media {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--brand-color-btn-1);
+  margin-bottom: 16px;
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-link-icon {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--logo-web);
+  align-items: center;
+  justify-content: center;
 }
