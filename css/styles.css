@@ -7,6 +7,7 @@
   --button-footer-text: #f4f4fd;
   --button-color: #e7e9fc;
   --list-card-set: #e7e9fc;
+  --footer-social-color: #31d0aa;
   --hero-gradient: linear-gradient(
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)
@@ -366,6 +367,11 @@ body {
   justify-content: center;
 }
 
+.saction-four-social-link:focus,
+.saction-four-social-link:hover {
+  background-color: var(--header-contact-color);
+}
+
 .saction-four-social-icon {
   fill: var(--button-footer-text);
 }
@@ -549,4 +555,9 @@ body {
   background-color: var(--logo-web);
   align-items: center;
   justify-content: center;
+}
+
+.footer-link-icon:focus,
+.footer-link-icon:hover {
+  background-color: var(--footer-social-color);
 }
