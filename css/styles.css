@@ -170,6 +170,9 @@ body {
   background-position: center;
   background-size: cover;
   padding: 188px 0;
+  max-width: 1440px;
+  height: 600px;
+  margin: 0 auto;
 }
 
 .hero-buttom {
@@ -219,8 +222,8 @@ body {
   display: flex;
   gap: 24px;
 }
+
 .section-two-icon {
-  width: 264px;
   height: 112px;
   border-radius: 4px;
   background-color: var(--button-footer-text);
