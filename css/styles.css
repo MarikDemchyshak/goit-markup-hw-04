@@ -8,6 +8,7 @@
   --button-color: #e7e9fc;
   --list-card-set: #e7e9fc;
   --footer-social-color: #31d0aa;
+  --color-icon: #8e8f99;
   --hero-gradient: linear-gradient(
     rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)
@@ -403,14 +404,25 @@ body {
   gap: 24px;
 }
 
-.section-five-icon {
+.section-five-link-icon {
   width: 168px;
   height: 88px;
-  border: 1px solid #8e8f99;
+  border: 1px solid currentColor;
+  color: var(--color-icon);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.section-five-svg {
+  fill: currentColor;
+}
+
+.section-five-link-icon:focus,
+.section-five-link-icon:hover {
+  border-color: var(--header-contact-color);
+  color: var(--header-contact-color);
 }
 
 /* BUTTON PORTFOLIO*/
@@ -460,7 +472,8 @@ body {
   width: calc((100% - 48px) / 3);
 }
 
-.item:hover {
+.card-link:hover {
+  display: block;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -528,10 +541,6 @@ body {
   margin-top: 16px;
 }
 
-.footer-social {
-  width: 208px;
-  height: 80px;
-}
 .footer-title-social-media {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
